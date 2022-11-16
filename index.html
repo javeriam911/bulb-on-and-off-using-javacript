@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        ;
+
+        .red {
+            display: flex;
+            justify-content: center;
+        }
+
+        ;
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+
+      
+    </style>
+</head>
+
+<body class="body">
+
+
+
+        <div class="flex-container">
+            <button class="off" onclick="OffImage() ">on</button>
+            <button onclick="OnImage() " class='red'>off</button>
+            <img width="100%" id="img" height="100%">
+        </div>
+
+
+</body>
+<script>
+
+    function OffImage() {
+
+
+        let image = document.getElementById("img");
+        image.src = 'on bulb.jpg'
+    }
+    function OnImage() {
+        let image = document.getElementById("img");
+        image.src = 'off bulb.jpg'
+
+
+
+    }
+</script>
+
+</html>
